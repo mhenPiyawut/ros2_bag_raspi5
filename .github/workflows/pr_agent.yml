@@ -16,5 +16,10 @@ jobs:
         id: pragent
         uses: mhenPiyawut/pr-agent-optimizer@main
         env:
-          OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OPENAI.API_TYPE: 'azure'
+          OPENAI.API_VERSION: '2023-05-15'
+          OPENAI.KEY: ${{ secrets.AZURE_OPENAI_API_KEY }}
+          OPENAI.API_BASE: ${{ secrets.AZURE_OPENAI_API_BASE }}
+          OPENAI.DEPLOYMENT_ID: 'gpt-4.1-ts4-jpe'
+          CONFIG.MODEL: 'gpt-4.1-ts4-jpe'
