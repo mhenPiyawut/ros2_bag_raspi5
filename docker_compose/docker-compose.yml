@@ -1,0 +1,14 @@
+version: '3'
+services:
+  ros2-container:
+    build: .
+    image: ros2_humble_custom:latest
+    network_mode: host
+    volumes:
+      - ../:/ros2_ws   # Maps host ./ros2_ws folder into container
+    environment:
+      - ROS_DOMAIN_ID=0
+      - ROS_LOCALHOST_ONLY=0
+    stdin_open: true
+    tty: true
+    command: /bin/bash
