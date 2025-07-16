@@ -18,5 +18,5 @@ services:
         source /opt/ros/humble/setup.bash &&
         source /ros2_ws/install/setup.bash &&
         cd /ros2_ws/bag_folder &&
-        ros2 bag record -a
+        ros2 bag record -a -b 5000000000
       "

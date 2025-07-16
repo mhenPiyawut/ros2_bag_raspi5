@@ -25,3 +25,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker
+# auto start docker
+sudo systemctl enable docker
+# add restart: always
+docker compose up -d
