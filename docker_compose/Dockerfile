@@ -15,6 +15,3 @@ RUN apt-get update && apt-get install -y \
 
 # Create and copy workspace
 WORKDIR /ros2_ws
-
-# Final setup
-ENTRYPOINT ["/bin/bash", "-c", "source /opt/ros/humble/setup.bash && bash"]
