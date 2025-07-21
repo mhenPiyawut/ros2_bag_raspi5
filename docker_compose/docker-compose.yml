@@ -8,6 +8,7 @@ services:
       - ../:/ros2_ws   # Maps host ./ros2_ws folder into container
       - /media/tdem-raspi/PortableSSD:/ros2_ws/bag_folder   # Maps host ./ros2_ws folder into container
     environment:
+      - TZ=Asia/Bangkok
       - ROS_DOMAIN_ID=50
       - ROS_LOCALHOST_ONLY=0
     stdin_open: true
