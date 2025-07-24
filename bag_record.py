@@ -7,7 +7,7 @@ import signal
 # Configuration
 RECORD_INTERVAL = 10*60  # 10 minutes in seconds
 MAX_STORAGE_GB = 30
-BAG_DIRECTORY = "./bag_files"
+BAG_DIRECTORY = "./bag_folder"
 NAMESPACE = "amr7"  # Default namespace; adjust as needed
 
 # Topics to record (with namespace as a placeholder)
