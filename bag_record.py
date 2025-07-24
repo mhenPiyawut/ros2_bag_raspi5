@@ -122,9 +122,9 @@ def main():
             record_rosbag(NAMESPACE, RECORD_INTERVAL)
         except Exception as e:
             print(f"Error during recording: {e}")
-        while get_total_size_gb(BAG_DIRECTORY) > MAX_STORAGE_GB:
-            print("Storage limit exceeded. Deleting oldest bag...")
-            delete_oldest_bag(BAG_DIRECTORY)
+        # while get_total_size_gb(BAG_DIRECTORY) > MAX_STORAGE_GB:
+        #     print("Storage limit exceeded. Deleting oldest bag...")
+        #     delete_oldest_bag(BAG_DIRECTORY)
 
 if __name__ == "__main__":
     main()
