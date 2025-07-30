@@ -17,6 +17,6 @@ services:
     command: >
       bash -c "
         source /opt/ros/humble/setup.bash &&
-        source /src/TPCAP_AUTO_ECAR/install/setup.bash &&
+        source /ros2_ws/src/TPCAP_AUTO_ECAR/install/setup.bash &&
         python3 bag_record.py
       "
