@@ -17,7 +17,6 @@ services:
     command: >
       bash -c "
         source /opt/ros/humble/setup.bash &&
-        source /ros2_ws/install/setup.bash &&
-        cd /ros2_ws/bag_folder &&
-        ros2 bag record -a -d 150
+        source /ros2_ws/src/TPCAP_AMR/install/setup.bash &&
+        python3 bag_record.py
       "
