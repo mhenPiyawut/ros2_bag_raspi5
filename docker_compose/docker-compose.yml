@@ -6,7 +6,7 @@ services:
     network_mode: host
     volumes:
       - ../:/ros2_ws   # Maps host ./ros2_ws folder into container
-      - /media/tdem-raspi/PortableSSD:/ros2_ws/bag_folder   # Maps host ./ros2_ws folder into container
+      - /media/raspi-ros-01/PortableSSD:/ros2_ws/bag_folder   # Maps host ./ros2_ws folder into container
     environment:
       - TZ=Asia/Bangkok
       - ROS_DOMAIN_ID=50
